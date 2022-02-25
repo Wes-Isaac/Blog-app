@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 RSpec.describe Post, type: :model do
-  new_user = User.new(name: 'isaac', bio: 'whome', postscounter: 2)
+  new_user = User.new(name: 'isaac', bio: 'whome', posts_counter: 2)
 
   subject do
     Post.new
@@ -41,7 +41,7 @@ RSpec.describe Post, type: :model do
     subject.title = 'another post'
     subject.text = 'i am trying to test'
     subject.author = new_user
-    subject.update_post_counter
+    subject.update_posts_counter
 
     expect(subject.author.posts_counter).to be(3)
   end
