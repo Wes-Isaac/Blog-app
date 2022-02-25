@@ -19,5 +19,10 @@
         <%= f.submit "Comment"%>
       </div>
     <% end %>
+     <%=form_with url: user_post_likes_url(@user.id, @post.id), scope: :data do |f| %>
+      <div>
+        <%= f.submit "Like"%>
+      </div>
+    <% end %>
 
-</div> 
+</div>
