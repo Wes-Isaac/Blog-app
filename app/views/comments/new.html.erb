@@ -1,0 +1,7 @@
+<%=form_with url: user_post_comments_url(@user.id, @post.id), scope: :data do |f| %>
+      <div>
+        <%= f.label :comment %>
+        <%= f.text_area :comment, :required=>true %>
+        <%= f.submit "Comment"%>
+      </div>
+<% end %>
