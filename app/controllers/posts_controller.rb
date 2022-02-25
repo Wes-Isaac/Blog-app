@@ -1,7 +1,7 @@
 class PostsController < ApplicationController
   def index
     @user = User.find(params[:user_id])
-    @posts = @user.posts
+    @posts = @user.posts.includes(:comments)
   end
 
   def show
@@ -25,7 +25,7 @@ class PostsController < ApplicationController
           flash[:success] = 'New post created successfully'
           redirect_to user_post_path(current_user.id, post.id)
         else
-          render :new, alert :'Error!'
+          render :new, alert: 'Error!'
         end
       end
     end
