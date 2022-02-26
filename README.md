@@ -28,6 +28,7 @@ rails s
 
 
 ## `Tests`
+To run all test on this repository run the command `bundle exec rspec`
 ### To track linter errors locally follow these steps:  
 
 Track linter errors run:
