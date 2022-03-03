@@ -1,0 +1,51 @@
+.d-flex {
+  display: flex;
+}
+
+.justify-content {
+  justify-content: center;
+}
+
+.align-items {
+  align-items: center;
+}
+
+.f-col {
+  flex-direction: column;
+}
+
+.login-page {
+  width: 90vw;
+  margin: 15px auto;
+  row-gap: 10px;
+}
+
+.login-page form {
+  row-gap: 10px;
+  width: 100%;
+}
+
+.field {
+  margin: 10px 0;
+  row-gap: 5px;
+  width: 100%;
+}
+
+.field input {
+  padding: 15px;
+  border-radius: 4px;
+  box-shadow: 0 4px 3px grey;
+  border: none;
+  outline: none;
+  width: 100%;
+}
+
+.actions input {
+  width: 96%;
+  background-color: rgb(246, 246, 248);
+  border-radius: 4px;
+  box-shadow: 0 4px 4px grey;
+  border: none;
+  outline: none;
+  padding: 10px;
+}
