@@ -10,7 +10,7 @@
   <% @comments.each do |comment| %>
     <h2><%= comment.author.name%>: <%= comment.text%></h2>
     <%if can? :destroy, comment %>
-      <%= button_to "Delete", user_post_comments_path(@user.id, @post.id, comment.id), method: :delete %>
+      <%= button_to "Delete", user_post_comment_path(@user.id, @post.id, comment.id), method: :delete %>
     <%end%>
   <%end%>
   </div>
