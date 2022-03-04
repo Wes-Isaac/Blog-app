@@ -93,3 +93,5 @@ RSpec.describe 'Post show page', type: :feature do
     end
   end
 end
+
+# rubocop:enable Metrics/BlockLength

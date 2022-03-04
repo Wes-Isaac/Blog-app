@@ -1,5 +1,4 @@
 require 'rails_helper'
-# rubocop:disable Metrics/BlockLength
 
 RSpec.describe 'Post Index page', type: :feature do
   describe 'Post Index requirements' do
@@ -27,7 +26,6 @@ RSpec.describe 'Post Index page', type: :feature do
       user_id = users[0].id
       Post.create(author: users[0], title: 'testing this link', text: 'just testing', likes_counter: 0,
                   comments_counter: 0)
-      post = Post.find_by(title: 'testing this link')
       6.times do |_post|
         Post.create(author: users[0], title: 'testing', text: 'just testing', likes_counter: 0, comments_counter: 0)
       end
