@@ -26,6 +26,10 @@ Then run:
 rails s
 ```
 
+## After installing bundle
+
+Please run the following commands `rails db:create` `rails db:migrate` `rails s`
+
 
 ## `Tests`
 To run all test on this repository run the command `bundle exec rspec`
